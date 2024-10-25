@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!-- daisy UI script -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="px-10 bg-slate-100">
+    <html data-theme="light"></html>
+    <h2 class="text-3xl font-bold py-3 text-center">Blog</h2>
+    <!-- q:1 -->
+    <div class="py-5">
+        <h2 class="text-xl font-bold">1: Discuss the scope of var, let, and const</h2>
+        <p class="text-xl py-3">Variables are container for storing data.There are three type of variables.</p>
+        <div class="grid grid-cols-3 gap-5">
+            <div class="bg-slate-300 p-5 rounded-lg">
+                <p class="font-bold text-xl">Var</p>
+                <ol>Variables declared with 'var' are hoisted to global scope.</ol>
+                <ol>Variables  declared with 'var' is moved to the top of the function.</ol>
+                <ol>'var' variables are redeclarable.</ol>
+                <ol>Value can be reassigned.</ol>
+                <ol>'var' can be used accessed it is declared but it will have value undefined.</ol>
+            </div>
+            <div class="bg-slate-300 p-5 rounded-lg">
+                <p class="font-bold text-xl">Let</p>
+                <ol>Variables declared with 'let' are only accessible within the block in which they are defined.</ol>
+                <ol>'let' variables are not redeclarable</ol>
+                <ol>Value can be reassigned.</ol>
+                <ol>let variables are not accessible outside of the block where they are declared.</ol>
+                <ol>Can not use or accessed it before declaration.</ol>
+            </div>
+            <div class="bg-slate-300 p-5 rounded-lg">
+                <p class="font-bold text-xl">Const</p>
+                <ol>'const' variables are block-scoped they are not accessible outside of the block where they are declared.</ol>
+                <ol>'const' variables are not redeclarable.</ol>
+                <ol>Value can not be reassigned.</ol>
+                <ol>Can not use or accessed it before declaration.</ol>
+            </div>
+        </div>
+    </div>
+    <!-- q:2 -->
+    <div class="py-5">
+        <h2 class="text-xl font-bold">2: Cases of null and undefined</h2>
+        <p class="text-xl py-3">Undefined and Null both are primitive values in JavaScript.But herees are some difference between them :</p>
+        <div class="grid grid-cols-2 gap-5">
+            <div class="bg-slate-300 p-5 rounded-lg">
+                <p class="font-bold text-xl">undefined</p>
+
+                <ol>It's a way to signal that a value is unintentionally empty or missing.</ol>
+                <ol>The type is undefined.</ol>
+                <ol>Equal to NUN (Not A Number ).</ol>
+                <ol>Js return undefied when using a variable before it is declared.</ol>
+                <ol>When a variable is declared but not assigned a value.</ol>
+            </div>
+            <div class="bg-slate-300 p-5 rounded-lg">
+                <p class="font-bold text-xl">Null</p>
+                <ol>It's a way to signal that a value is intentionally empty or missing.</ol>
+                <ol>No values on purpose.</ol>
+                <ol>The type is object.</ol>
+                <ol>Equal to 0 (zero).</ol>
+            </div>
+        </div>
+    </div>
+    <!-- q:3 -->
+    <div class="py-5">
+        <h2 class=" py-3 text-xl font-bold">3: REST API</h2>
+        <p class="text-xl bg-slate-300 p-5 rounded-lg">A REST API ( Representational State Transfer Application Programming Interface)is an API that conforms to the design principles of the REST, or representational state transfer architectural style. 
+        For this reason, REST APIs are sometimes referred to RESTful APIs.</p>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
